@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+    var drink = "Energy Drink";
+    var lyrics = "";
+    var cans = 99;
+    while (cans > 0) {
+        lyrics = lyrics + cans + " cans of "
+        + drink + " on the wall <br>";
+        console.log(lyrics);
+        lyrics = lyrics + cans + " cans of "
+        + drink + "<br>";
+        console.log(lyrics);
+        lyrics = lyrics + "Take one down, pass it around,<br>";
+        console.log(lyrics);
+        if (cans > 1) {
+            lyrics = lyrics + (cans-1) + " cans of "
+            + drink + " on the wall <br>";
+            console.log(lyrics);
+        }
+        else {
+            lyrics = lyrics + "No more cans of "
+            + drink + " on the wall <br>";
+            console.log(lyrics);
+        }
+        cans = cans - 1;
+    }
+    document.write(lyrics);
+    console.log(lyrics);
+
+</script>
+</body>
+</html>
