@@ -69,15 +69,20 @@ function degreesToRadians(degrees) {
 }
 
 function updateTweets(tweets) {
+
     var tweetsSelection = document.getElementById("tweets");
+
     for (var i = 0; i < tweets.length; i++) {
+
         tweet = tweets[i];
         var option = document.createElement("option");
         option.text = tweet.text;
         option.value = tweet.text.replace("\"", "'");
         tweetsSelection.options.add(option);
+
     }
     tweetsSelection.selectedIndex = 0;
+
 }
 
 function drawText(canvas, context) {
